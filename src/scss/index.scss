@@ -1,0 +1,30 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "_variables"; // import custom variables before main bootstrap SASS file
+// @import "../../node_modules/bootstrap/scss/functions";
+@import "_nav";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+
+body {
+  background: $bgc01;
+}
+
+li a {
+  color: map-get($colors, thirdC);
+}
+
+h1,
+h2,
+h3 {
+  // color: map-get($colors, primaryC);
+  text-align: map-get($textAlign, center);
+}
+
+.item-1 {
+  background: $cyan;
+}
+.item-2 {
+  background: $red;
+}
